@@ -83,12 +83,12 @@ Let's set up our developer environment.
 
 Navigate to the project directory and run the following command:
     ``` bash
-    python -m venv project_name
+    python -m venv libsys
     ```
 
 After creating the virtual environment, you activate it by running:
     ``` bash
-    source project_name/bin/activate
+    source libsys/bin/activate
     ```
 
 Once activated, you can install packages using `pip` without breaking the global system config. To deactivate the virtual environment, run:
@@ -96,4 +96,9 @@ Once activated, you can install packages using `pip` without breaking the global
     deactivate
     ```
 
-The virtual environment helps you manage project-specific dependencies.
+To install any packages via pip, add them to the requirements.txt file and run:
+    ``` bash
+    pip install -r requirements.txt
+    ```
+The `requirements.txt` file lists all the dependencies your project relies on.
+
