@@ -79,4 +79,21 @@ sudo apt install git python-is-python3 python3-dev python3-pip redis-server libm
 
 Let's set up our developer environment.
 
-### Virtual Environment
+### Set Up the Python Virtual Environment
+
+Navigate to the project directory and run the following command:
+    ``` bash
+    python -m venv project_name
+    ```
+
+After creating the virtual environment, you activate it by running:
+    ``` bash
+    source project_name/bin/activate
+    ```
+
+Once activated, you can install packages using `pip` without breaking the global system config. To deactivate the virtual environment, run:
+    ```bash
+    deactivate
+    ```
+
+The virtual environment helps you manage project-specific dependencies.
