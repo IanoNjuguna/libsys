@@ -83,12 +83,12 @@ Let's set up our developer environment.
 
 Navigate to the project directory and run the following command:
     ``` bash
-    python -m venv libsys
+    python -m venv env
     ```
 
 After creating the virtual environment, you activate it by running:
     ``` bash
-    source libsys/bin/activate
+    source env/bin/activate
     ```
 
 Once activated, you can install packages using `pip` without breaking the global system config. To deactivate the virtual environment, run:
